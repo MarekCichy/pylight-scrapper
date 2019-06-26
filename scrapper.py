@@ -20,7 +20,7 @@ def get_talks(response):
 
 if __name__ == "__main__":
     try:
-        response = get_html(url="https://web.archive.org/web/20190618105438/http://www.pylight.org/")
+        response = get_html(url="https://www.pylight.org/")
         try:
             if sys.argv[1] == '--output-format=text':
                 meetup_details = check_date_and_address(response)
